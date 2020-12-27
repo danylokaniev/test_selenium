@@ -6,7 +6,7 @@ Feature: CBT Feature
     Then I should check text "<text>"
 
     Examples:
-        | classname                             | text                  |
-        | infochart-cell__short-description     | Of Southwest Flyers Felt Digital Wayfinding Improved Navigation |
+       | classname                             | text                  |
+       | infochart-cell__short-description     | Of Southwest Flyers Felt Digital Wayfinding Improved Navigation |
 
 

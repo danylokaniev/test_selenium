@@ -1,12 +1,13 @@
 var webdriver = require('selenium-webdriver');
 var {Given, When, Then } = require('cucumber');
-var assert = require('assert');
+var assert = require('assert')
 
 let textToCompare = ''
 
-  Given('I go to web site', function() {
+  Given('I go to the web site', function() {
     this.open('https://www.epam.com/')
-  });
+    
+  })
 
   When('I find the div with classname {string}', function (classname) {
     return this.driver.findElement(webdriver.By.className(classname)).getText().then(text =>  textToCompare = text )
@@ -16,7 +17,7 @@ let textToCompare = ''
     
     return this.driver.getCurrentUrl()
       .then(function() {
-        assert.equal(textToCompare, linkText, "wrong text");
-    });
+        assert.equal(textToCompare, linkText, "wrong text")
+    })
   
-  });
+  })

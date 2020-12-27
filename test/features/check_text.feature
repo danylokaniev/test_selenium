@@ -3,7 +3,7 @@ Feature: CBT Feature
   Scenario Outline: Test text
     Given I go to the web site
     When I find the div with classname "<classname>"
-    Then I find the div I should check text "<text>"
+    Then I should check text "<text>"
 
     Examples:
         | classname                             | text                  |

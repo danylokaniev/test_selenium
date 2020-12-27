@@ -5,10 +5,10 @@ Feature: CBT Feature
     When I find the button "<button>"
     Then I should go to "<link>"
 
-    Examples:
-        | button                  | link                  |
-        | header__logo-container  | https://www.epam.com/ |
-        | cta-button-ui cta-button--envelope header__control      | https://www.epam.com/ |
-        | rollover-tiles__link      | https://www.epam.com/ |
+   ## Examples:
+       ## | button                  | link                  |
+       ## | header__logo-container  | https://www.epam.com/ |
+       ## | cta-button-ui cta-button--envelope header__control      | https://www.epam.com/ |
+       ## | rollover-tiles__link      | https://www.epam.com/ |
 
 

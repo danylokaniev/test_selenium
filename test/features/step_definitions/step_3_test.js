@@ -10,10 +10,12 @@ var assert = require('assert');
     return this.driver.findElement(webdriver.By.xpath(driver.find_element_by_xpath("//input[@name='user_phone']"))).sendKeys(button, driver.Key.ENTER)
   });
 
-  Then('I should go to {string}', function(linkText) {
-    return this.driver.getCurrentUrl()
-      .then(function(elems) {
-        assert.equal(elems, linkText, "wrong url");
+  Then('Then I should check if input is filled correctly', function() {
+
+    return this.driver.findElement(webdriver.By.xpath(driver.find_element_by_xpath("//input[@name='user_phone']")))
+    .getAttribute('aria-invalid')
+    .then(function(elems) {
+        assert.equal(elems, false, "wrong url");
     });
   
   });

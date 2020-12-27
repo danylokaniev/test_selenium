@@ -11,6 +11,7 @@ class CustomWorld {
   constructor() {
     setDefaultTimeout(100 * 1000)
     this.driver = new Builder().forBrowser('chrome').build();
+    this.currentText = ''
   }
 
   open(url) {
@@ -20,6 +21,23 @@ class CustomWorld {
   findAndClick (className) {
     return this.driver.findElement(webdriver.By.className(className)).click();
   }
+
+  findAndCompText(className, compText) {
+      this.currentText = ''
+      return this.driver.findElement(webdriver.By.className(className)).getText().then(text => 
+        assert.equal(text, compText, "wrong text")
+        )
+  }
+
+  set setCurrentText(text) {
+    this.currentText = text
+  }
+
+  get getCurrentText() {
+    return this.currentText
+  } 
+
+
 }
   
 setWorldConstructor(CustomWorld)

@@ -9,6 +9,6 @@ Feature: CBT Feature
         | button                  | link                  |
         | header__logo-container  | https://www.epam.com/ |
         | cta-button-ui cta-button--envelope header__control      | https://www.epam.com/ |
-        | rollover-tiles__link      | https://www.epam.com/services/consult-and-design |
+        | rollover-tiles__link      | https://www.epam.com/ |
 
 

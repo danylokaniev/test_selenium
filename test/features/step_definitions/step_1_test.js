@@ -2,7 +2,7 @@ var webdriver = require('selenium-webdriver');
 var {Given, When, Then } = require('cucumber');
 var assert = require('assert');
 
-  Given('I go to web site', function() {
+  Given('I go to  web site', function() {
     this.open('https://www.epam.com/')
   });
 

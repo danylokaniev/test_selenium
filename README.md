@@ -1,4 +1,7 @@
-how to run:
- 1. npm i
- 2. npm test
- 
+npm i
+
+webdriver-manager update
+
+webdriver-manager start
+
+protractor config/chrome.js
